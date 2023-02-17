@@ -1,0 +1,10 @@
+<div>
+  <button (click)="derease()">-</button>
+  <h1>{{ (counter$ | async)}}</h1>
+  <button (click)="increase()">+</button>
+  <button (click)="reset()">Reset</button>
+</div>
+<div class="parent">
+  <app-detail *ngFor="let dog of Doggys" (outputData)="addRandom($event)" [inputData]="dog"></app-detail>
+</div>
+<!-- <app-detail (outputData)="addRandom($event)" [inputData]="'du lieu tu table xuong detail'"></app-detail> -->

@@ -1,0 +1,17 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+.parent {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+// .parent {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+// }
